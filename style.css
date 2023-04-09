@@ -36,7 +36,7 @@ td>p{
 }
 
 
-td>span{
+td>div>span{
     font-size: 24px;
     font-weight: bold;
     margin-right: 30px;
@@ -75,11 +75,11 @@ main{
 
 footer{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
+    width: 100%;
     align-items: center;
     min-height: 400px;
-    
     background-color: rgba(128, 128, 128, 1);
     padding: 20px;
 }
@@ -102,6 +102,12 @@ div.review>input{
     border: 0.2px solid rgba(0, 0, 0, 0.194);
 }
 
+
+td>div{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 /*----------Stile aggiunto da JS per tutti i link per amazon---------*/
 .amazonBtn{
     text-decoration: none;
@@ -109,6 +115,9 @@ div.review>input{
     font-weight: bold;
     color: black;
     transition: all 0.1s ease-in-out;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
 }
 
 .amazonBtn::before{
